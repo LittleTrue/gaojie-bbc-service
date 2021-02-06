@@ -57,26 +57,37 @@ $orderSrv = new OrderService($ioc_con_app);
 //print_r(json_encode($orderSrv->addOrder($array), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)); exit();
 
 //查询订单服务-----
-$array = [
-    'seller'  => '洋葱小姐',
-    'api_key' => 'b00ac9a36735ea614cbe339e6a338195',
-    'order'   => [
-        'order_sn' => ['201612232058161091', 'A20161223205816188'],
-        'vague'    => '2',
-    ],
-];
-
-print_r(json_encode($orderSrv->checkOrder($array), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)); exit();
+//$array = [
+//    'seller'  => '洋葱小姐',
+//    'api_key' => 'b00ac9a36735ea614cbe339e6a338195',
+//    'order'   => [
+//        'order_sn' => ['201612232058161091', 'A20161223205816188'],
+//        'vague'    => '2',
+//    ],
+//];
+//
+//print_r(json_encode($orderSrv->checkOrder($array), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)); exit();
 
 //修改订单服务
+//$array = [
+//    'seller'  => '洋葱小姐',
+//    'api_key' => 'b00ac9a36735ea614cbe339e6a338195',
+//    'order'   => [
+//        'order_sn'    => '0000078795',
+//        'order_name'  => '陈xx',
+//        'order_idnum' => '440981199801102251',
+//    ],
+//];
+//
+//print_r(json_encode($orderSrv->updateOrder($array), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)); exit();
+
+//订单物流单号查询服务
 $array = [
     'seller'  => '洋葱小姐',
     'api_key' => 'b00ac9a36735ea614cbe339e6a338195',
     'order'   => [
-        'order_sn'    => '0000078795',
-        'order_name'  => '陈xx',
-        'order_idnum' => '440981199801102251',
+        'order_sn' => 'WMS2017*******18745A1',
     ],
 ];
 
-print_r(json_encode($orderSrv->updateOrder($array), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)); exit();
+print_r(json_encode($orderSrv->checkLogistics($array), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)); exit();

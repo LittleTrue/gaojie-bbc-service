@@ -22,9 +22,9 @@ class OrderService
 
     /**
      * 新增商品.
-     *
+     * @param array $infos
+     * @return
      * @throws ClientError
-     * @throws \Exception
      */
     public function addOrder(array $infos)
     {
@@ -37,9 +37,9 @@ class OrderService
 
     /**
      * 订单查询.
-     *
+     * @param array $infos
+     * @return
      * @throws ClientError
-     * @throws \Exception
      */
     public function checkOrder(array $infos)
     {
@@ -52,9 +52,9 @@ class OrderService
 
     /**
      * 订单修改.
-     *
+     * @param array $infos
+     * @return
      * @throws ClientError
-     * @throws \Exception
      */
     public function updateOrder(array $infos)
     {
@@ -63,5 +63,20 @@ class OrderService
         }
 
         return $this->_orderClient->updateOrder($infos);
+    }
+
+    /**
+     * 订单物流单号查询.
+     * @param array $infos
+     * @return mixed
+     * @throws ClientError
+     */
+    public function checkLogistics(array $infos)
+    {
+        if (empty($infos)) {
+            throw new ClientError('参数缺失', 1000001);
+        }
+
+        return $this->_orderClient->checkLogistics($infos);
     }
 }
