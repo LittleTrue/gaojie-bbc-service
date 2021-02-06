@@ -1,0 +1,30 @@
+{
+    "name": "gxz/gao-jie-service",
+    "type": "library",
+    "keywords": [
+        "gao-jie-service"
+    ],
+    "authors": [
+        {
+            "name": "littleTrue",
+            "email": "644812368@qq.com",
+            "homepage": "https://www.jianshu.com/u/8775ddf16c8b"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": "^6.2",
+        "adbario/php-dot-notation": "^2.0",
+        "pimple/pimple": "v2.1.1",
+        "ext-json": "*",
+        "symfony/var-dumper": "*"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "GaoJie\\GaoJieClient\\": "src/client/",
+            "GaoJie\\GaoJieService\\": "src/service/"
+        }
+    }
+}
