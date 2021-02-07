@@ -15,11 +15,11 @@ $orderSrv = new OrderService($ioc_con_app);
 //    'seller'  => '洋葱小姐',
 //    'api_key' => 'b00ac9a36735ea614cbe339e6a338195',
 //    'order'   => [
-//        'order_sn'             => 'WMS201*****61874511',
-//        'buyer_name'           => '蔡**',
-//        'buyer_phone'          => '183****5195',
-//        'buyer_idcard'         => '35**************66',
-//        'country_code'         => '\'142\'',
+//        'order_sn'             => 'WMS2021020661874511',
+//        'buyer_name'           => '刘焕',
+//        'buyer_phone'          => '17304023506',
+//        'buyer_idcard'         => '440981199801102251',
+//        'country_code'         => '142',
 //        'province_code'        => 'code', //固定
 //        'buyer_address'        => '广东省^^^广州市^^^白云区^^^广园中路XXX号XXX大厦',
 //        'sender_name'          => '测试',
@@ -35,9 +35,11 @@ $orderSrv = new OrderService($ioc_con_app);
 //        'record_no_qg'         => '440196****',
 //        'record_name'          => '广州高捷航运物流有限公司',
 //        'customs_code'         => '5141',
+//        'warehouse_code'       => '123',
+//        'handlook_number'      => '123',
 //        'order_goods'          => [
 //            [
-//                'customs_goods_id'    => '31978',
+////                'customs_goods_id'    => '31978',
 //                'goods_num'           => '1',
 //                'goods_price'         => '200.00',
 //                'trade_curr'          => '142',
@@ -62,7 +64,7 @@ $orderSrv = new OrderService($ioc_con_app);
 //    'api_key' => 'b00ac9a36735ea614cbe339e6a338195',
 //    'order'   => [
 //        'order_sn' => ['201612232058161091', 'A20161223205816188'],
-//        'vague'    => '2',
+//        'vague' => '2'
 //    ],
 //];
 //
